@@ -26,10 +26,10 @@ namespace DatabaseFirstLINQ
             //ProblemNine();
             //ProblemTen();
             //ProblemEleven();
-            //ProblemTwelve();
-            //ProblemThirteen();
-            //ProblemFourteen();
-            //ProblemFifteen();
+            ProblemTwelve();
+            ProblemThirteen();
+            ProblemFourteen();
+            ProblemFifteen();
             //ProblemSixteen();
             //ProblemSeventeen();
             //ProblemEighteen();
@@ -230,7 +230,7 @@ namespace DatabaseFirstLINQ
         private void ProblemFifteen()
         {
             // Update the email of the user we created to "mike@gmail.com"
-            var user = _context.Users.Where(u => u.Email == "david@gmail.com").SingleOrDefault();
+            var user = _context.Users.Where(u => u.Email == "jimbob13@gmail.com").SingleOrDefault();
             user.Email = "mike@gmail.com";
             _context.Users.Update(user);
             _context.SaveChanges();
