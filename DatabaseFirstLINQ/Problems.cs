@@ -25,7 +25,7 @@ namespace DatabaseFirstLINQ
             //ProblemEight();
             //ProblemNine();
             //ProblemTen();
-            //ProblemEleven();
+            ProblemEleven();
             //ProblemTwelve();
             //ProblemThirteen();
             //ProblemFourteen();
@@ -176,8 +176,8 @@ namespace DatabaseFirstLINQ
             // Create a new User object and add that user to the Users table using LINQ.
             User newUser = new User()
             {
-                Email = "david@gmail.com",
-                Password = "DavidsPass123"
+                Email = "jimbob13@gmail.com",
+                Password = "JimmysPass123"
             };
             _context.Users.Add(newUser);
             _context.SaveChanges();
